@@ -1,0 +1,35 @@
+.photos {  /* Genel div in class'ı  */
+    text-align: center;
+    /* width: 100px;
+    height: 100px; */
+    /* float: left; */
+    display: flex;  /* Yanyana dizmemi sağladı. Tam fonksiyonunu bilmiyorum */
+    flex-wrap: wrap;  /* Yanyana gelen yapıların ekran boyutunu aşmayıp, sığmayanları aşağı alması için yazıyoruz*/
+    gap: 12px;  /* Aralardaki boşluk */
+}
+
+.photo {  /* Her bir photo lu objenin class'ı */
+    border: 1px solid #ccc;
+    padding: 12px;
+    width: 200px;  /* div lerin boyutunu 100px yaptık   ---   Ama içindeki image lerin boyutu değişmedi ve birbirine karıştı*/  
+    margin: 60px;
+}
+
+.photo > h3{      /* Oluşturduğumuz divlerin altında bulunan h3 e div in class ı olan photo aracılığıyla photo class lı elementin altındaki h3 anlamına gelen .photo >h3 ile ulaşabilir ve onun class ı gibi bunun içinde style değişiklikleri yapabiliriz. */
+    color: blue;
+    width: 200px;  /* Yazıların alanı belirli olsun ve diğer div'ler ile birbirinden farklı durmasınlar diye */
+    height: 60px;
+}
+
+.photo > img{  /*.photo > div > img{ */
+    width: 200px;   /* image lerin boyutunu ayarlamak için  */
+    height: 150px;
+}
+
+.searchBar {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    margin-top: 50px;   
+}
