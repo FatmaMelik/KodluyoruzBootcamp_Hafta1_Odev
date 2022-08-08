@@ -9,19 +9,21 @@
 }
 
 .photo {  /* Her bir photo lu objenin class'ı */
-    border: 1px solid #ccc;
+    border-style: initial;
+    border-radius: 12px;
+    background-image: url("https://i.pinimg.com/564x/e5/6a/27/e56a271c6257f24ab83e0663a4e93e2c.jpg");
     padding: 12px;
-    width: 200px;  /* div lerin boyutunu 100px yaptık   ---   Ama içindeki image lerin boyutu değişmedi ve birbirine karıştı*/  
+    width: 200px;  /*div lerin boyutunu 100px yaptık   ---   Ama içindeki image lerin boyutu değişmedi ve birbirine karıştı  */
     margin: 60px;
 }
 
 .photo > h3{      /* Oluşturduğumuz divlerin altında bulunan h3 e div in class ı olan photo aracılığıyla photo class lı elementin altındaki h3 anlamına gelen .photo >h3 ile ulaşabilir ve onun class ı gibi bunun içinde style değişiklikleri yapabiliriz. */
-    color: blue;
+    color: black;
     width: 200px;  /* Yazıların alanı belirli olsun ve diğer div'ler ile birbirinden farklı durmasınlar diye */
     height: 60px;
 }
 
-.photo > img{  /*.photo > div > img{ */
+.photo_url{  /*.photo > div > img{ */
     width: 200px;   /* image lerin boyutunu ayarlamak için  */
     height: 150px;
 }
@@ -33,3 +35,29 @@
     width: 300px;
     margin-top: 50px;   
 }
+
+.photo > center {
+    /* text-align: justify; */
+    /* text-align: center; */
+    /* justify-content: end; */
+    display: flex;
+    float: left;  /* Bunun sayesinde yatay oldu */
+    width:30px;
+    height: 30px;
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    /* padding: 10px; */
+    /* flex-direction: column-reverse; */
+}
+
+
+/* .edit_logo {
+    text-align: justify;
+     display: flex;
+    float: left;   Bunun sayesinde yatay oldu
+     width:30px;
+    height: 30px; 
+    justify-content: end;
+    flex-wrap: wrap; 
+    text-align: center;
+}  */
