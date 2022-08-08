@@ -1,30 +1,27 @@
-.photos {  /* Genel div in class'ı  */
+.photos {  
     text-align: center;
-    /* width: 100px;
-    height: 100px; */
-    /* float: left; */
-    display: flex;  /* Yanyana dizmemi sağladı. Tam fonksiyonunu bilmiyorum */
-    flex-wrap: wrap;  /* Yanyana gelen yapıların ekran boyutunu aşmayıp, sığmayanları aşağı alması için yazıyoruz*/
-    gap: 12px;  /* Aralardaki boşluk */
+    display: flex; 
+    flex-wrap: wrap;  
+    gap: 12px;  
 }
 
-.photo {  /* Her bir photo lu objenin class'ı */
+.photo { 
     border-style: initial;
     border-radius: 12px;
     background-image: url("https://i.pinimg.com/564x/e5/6a/27/e56a271c6257f24ab83e0663a4e93e2c.jpg");
     padding: 12px;
-    width: 200px;  /*div lerin boyutunu 100px yaptık   ---   Ama içindeki image lerin boyutu değişmedi ve birbirine karıştı  */
+    width: 200px;  
     margin: 60px;
 }
 
-.photo > h3{      /* Oluşturduğumuz divlerin altında bulunan h3 e div in class ı olan photo aracılığıyla photo class lı elementin altındaki h3 anlamına gelen .photo >h3 ile ulaşabilir ve onun class ı gibi bunun içinde style değişiklikleri yapabiliriz. */
+.photo > h3{      
     color: black;
-    width: 200px;  /* Yazıların alanı belirli olsun ve diğer div'ler ile birbirinden farklı durmasınlar diye */
+    width: 200px;  
     height: 60px;
 }
 
-.photo_url{  /*.photo > div > img{ */
-    width: 200px;   /* image lerin boyutunu ayarlamak için  */
+.photo_url{ 
+    width: 200px;   
     height: 150px;
 }
 
@@ -37,27 +34,8 @@
 }
 
 .photo > center {
-    /* text-align: justify; */
-    /* text-align: center; */
-    /* justify-content: end; */
     display: flex;
-    float: left;  /* Bunun sayesinde yatay oldu */
+    float: left; 
     width:30px;
     height: 30px;
-    /* flex-direction: row; */
-    /* flex-wrap: nowrap; */
-    /* padding: 10px; */
-    /* flex-direction: column-reverse; */
 }
-
-
-/* .edit_logo {
-    text-align: justify;
-     display: flex;
-    float: left;   Bunun sayesinde yatay oldu
-     width:30px;
-    height: 30px; 
-    justify-content: end;
-    flex-wrap: wrap; 
-    text-align: center;
-}  */

@@ -9,14 +9,10 @@ const writeToScreen = (data =[]) => {
         <center onclick="editPhotos(${photo.id})"><img style="margin-left: 140px;" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-edit-miscellaneous-kiranshastry-solid-kiranshastry.png"></center>
         </div>`;        
     });
-        // https://img.icons8.com/glyph-neue/64/000000/delete-forever.png
-        // https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png
-        // https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-delete-video-and-movie-tanah-basah-glyph-tanah-basah.png
         photosEl.innerHTML= datas;
         
 }
 const deletePhotos= (photo) => {
-    // $(`#${photo.id}`).remove();
     document.getElementById(`${photo}`).remove();
 }
 const editPhotos=(photo) => {
